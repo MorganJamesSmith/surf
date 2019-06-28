@@ -143,13 +143,13 @@ Enter normal mode. All following keybindings only work when in normal mode.
 .B i
 Enter insert mode.
 .TP
-.B c
+.B Ctrl\-c or c
 Stops loading current page or stops download.
 .TP
-.B h
+.B Shift\-h
 Walks back the history.
 .TP
-.B l
+.B Shift\-l
 Walks forward the history.
 .TP
 .B k
@@ -158,16 +158,22 @@ Scrolls page upwards.
 .B j
 Scrolls page downwards.
 .TP
-.B u
+.B Ctrl\-u
 Scroll up one whole page view.
 .TP
-.B d
+.B Ctrl\-d
 Scroll down one whole page view.
 .TP
-.B NO KEYBINDING
+.B g
+Scroll to top of page.
+.TP
+.B Shift\-g
+Scroll to bottom of page.
+.TP
+.B h
 Scroll horizontally to the right.
 .TP
-.B NO KEYBINDING
+.B l
 Scroll horizontally to the left.
 .TP
 .B Shift\-k or +
@@ -188,7 +194,7 @@ Go to next search result.
 .B Shift\-n
 Go to previous search result.
 .TP
-.B g
+.B o
 Opens the URL-bar (requires dmenu installed).
 .TP
 .B p
