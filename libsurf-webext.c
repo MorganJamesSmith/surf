@@ -100,6 +100,16 @@ readpipe(GIOChannel *s, GIOCondition c, gpointer unused)
 		webkit_dom_dom_window_scroll_by(view,
 		                                0, (wh / 100) * msg[3]);
 		break;
+	case 'g':
+		if (msgsz != 4)
+			return TRUE;
+		if (msg[3] > 0) {
+			wh = webkit_dom_dom_window_get_inner_height(view);
+			webkit_dom_dom_window_scroll_by(view, 0, G_MAXINT);
+		} else {
+			webkit_dom_dom_window_scroll_to(view, 0, 0);
+		}
+
 	}
 
 	return TRUE;

@@ -174,9 +174,9 @@ static Key keys[] = {
 	{ 0|GDK_SHIFT_MASK,         GDK_KEY_h,        navigate,   { .i = -1 } },
 
 	{ 0,                        GDK_KEY_j,        scrollv,    { .i = +10 } },
-	{ 0|GDK_SHIFT_MASK,         GDK_KEY_g,        scrollg,    { .i = 1 } },
+	{ 0|GDK_SHIFT_MASK,         GDK_KEY_g,        scrollg,    { .i = +1 } },
 	{ 0,                        GDK_KEY_k,        scrollv,    { .i = -10 } },
-	{ 0,                        GDK_KEY_g,        scrollg,    { .i = 0 } },
+	{ 0,                        GDK_KEY_g,        scrollg,    { .i = -1 } },
 	{ 0,                        GDK_KEY_h,        scrollh,    { .i = +10 } },
 	{ 0,                        GDK_KEY_l,        scrollh,    { .i = -10 } },
 	{ MODKEY,                   GDK_KEY_u,        scrollv,    { .i = -50 } },
