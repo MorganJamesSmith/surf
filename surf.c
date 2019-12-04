@@ -179,6 +179,7 @@ static void newwindow(Client *c, const Arg *a, int noembed);
 static void spawn(Client *c, const Arg *a);
 static void msgext(Client *c, char type, const Arg *a);
 static void destroyclient(Client *c);
+static void quit(Client *c, const Arg *a);
 static void cleanup(void);
 static int insertmode = 0;
 
@@ -1082,6 +1083,12 @@ destroyclient(Client *c)
 	else
 		clients = c->next;
 	free(c);
+}
+
+void
+quit(Client *c, const Arg *a)
+{
+	die((char *) a->v);
 }
 
 void

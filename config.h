@@ -161,6 +161,8 @@ static Key keys[] = {
 	{ 0,                        GDK_KEY_slash,    spawn,      SETPROP("_SURF_FIND", "_SURF_FIND", PROMPT_FIND) },
 	{ 0,                        GDK_KEY_w,        spawn,      MPV },
 
+	{ MODKEY,                   GDK_KEY_w,        quit,      { .v = "Quitting Surf\n" } },
+
 	{ 0,                        GDK_KEY_i,        insert,     { .i = 1 } },
 	{ 0,                        GDK_KEY_Escape,   insert,     { .i = 0 } },
 
